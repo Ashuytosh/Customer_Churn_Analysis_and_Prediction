@@ -43,13 +43,13 @@
 ## Insights
 
 ### Distribution of Numeric Features
-![Distribution of Numeric Features](Output_Screenshots/Distribution_of_Numeric Features.png)
+![Distribution of Numeric Features](Output_Screenshots/Distribution_of_Numeric_Features.png)
 
 ### Area Code vs Churn (Violin Plot)
-![Area Code vs Churn (Violin Plot)](Output Screenshots/Area Code vs Churn (Violin Plot).png)
+![Area Code vs Churn (Violin Plot)](Output_Screenshots/Area_Code_vs_Churn.png)
 
 ### Correlation Heatmap (Numerical Features)
-![Correlation Heatmap (Numerical Features)](Output Screenshots/Correlation Heatmap(Numerical Features).png)
+![Correlation Heatmap (Numerical Features)](Output_Screenshots/Correlation_Heatmap.png)
 
 
 ---
@@ -70,7 +70,7 @@
    - Support Vector Machine (SVM)
 
 ### Model Performance Summary
-![Model Performance Summary](Output Screenshots/Model Performance Summary.png)
+![Model Performance Summary](Output_Screenshots/Model_Performance_Summary.png)
 
 **Gradient Boosting** emerged as the **best-performing model** 🔥  
 showing the **highest Accuracy (91.9%)**, **Precision (70.8%)**, **Recall (75.3%)**, and **F1-Score (73.0%)** —  
@@ -81,7 +81,7 @@ indicating a well-balanced and reliable model for **Customer Churn Prediction**.
 ## More Insights
 
 ### Top 5 Features Contributing to Customer Churn
-![Top 5 Features Contributing to Customer Churn](Output Screenshots/Top 5 Features Contributing to Customer Churn.png)
+![Top 5 Features Contributing to Customer Churn](Output_Screenshots/Top_5_Features_Contributing_to_Customer_Churn.png)
 
 ### Customer Service Calls vs Churn
-![Customer Service Calls vs Churn](Output Screenshots/Customer Service Calls vs Churn.png)
+![Customer Service Calls vs Churn](Output_Screenshots/Customer_Service_Calls_vs_Churn.png)
