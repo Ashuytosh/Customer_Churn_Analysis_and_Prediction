@@ -85,3 +85,15 @@ indicating a well-balanced and reliable model for **Customer Churn Prediction**.
 
 ### Customer Service Calls vs Churn
 ![Customer Service Calls vs Churn](Output_Screenshots/Customer_Service_Calls_vs_Churn.png)
+
+
+## Key Findings
+
+1. The **top 5 features contributing to churn** are:  
+   - Int'l Plan  
+   - Day Mins  
+   - CustServ Calls  
+   - High_CustServ_Calls  
+   - Day_Avg_Call_Duration  
+
+2. The **best model** for predicting customer churn in this dataset is **Gradient Boosting**.
