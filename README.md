@@ -6,20 +6,37 @@
 
 ## Dataset Overview
 
-The dataset consists of telecom customer information including demographic data, account information, and service usage metrics. It contains features like `State`, `Area Code`, `Customer Service Calls`, `Day Minutes`, `Night Minutes`, and several others that help analyze customer behavior and churn tendencies.  
+- **File:** `data/churn_modified.csv`
+- **Records:** 3333 customer records
+- **Features:** 21 features, including customer demographics, call usage, and service plan information
 
-After preprocessing, the dataset was transformed to handle missing values, encode categorical variables, and prepare it for modeling.
 
 ---
 
-## Data Preprocessing & Feature Engineering
+## Key Steps Before Model Training
 
-- **Handling Missing Values:** Checked and handled missing entries in relevant columns to ensure clean input for modeling.  
-- **Feature Encoding:** Converted categorical features such as `Int'l Plan` and `Voice Mail Plan` to numeric or dummy variables.  
-- **Feature Scaling & Transformation:** Normalized and standardized numeric features where necessary for better model performance.  
-- **Dataset Splitting:** Divided the data into training, validation, and test sets for model evaluation.  
+1. **Initial Data Checks**
+   - Checked dataset **shape** and **info**
+   - Checked for **null values** and **duplicates**
+   - Observed **class imbalance** in `Churn` (~14.5% churned)
 
-These steps ensured the dataset was clean, well-prepared, and ready for model training and analysis.
+2. **Outlier Handling**
+   - Handled outliers using **IQR capping**
+
+3. **Categorical Encoding**
+   - Converted categorical columns to numerical using **Label Encoding**
+
+4. **Feature Engineering**
+   - Calculated **average call duration** for Day, Eve, Night, and International calls  
+   - Created a **binary flag for high customer service calls** (`High_CustServ_Calls`)
+
+5. **Redundant Column Removal**
+   - Dropped columns causing multicollinearity or redundancy
+
+6. **Visualization**
+   - Visualized distributions, outliers, and feature-target relationships
+
+> These steps ensured the dataset was clean, well-prepared, and ready for **model training and analysis**.
 
 ---
 
@@ -34,23 +51,30 @@ These steps ensured the dataset was clean, well-prepared, and ready for model tr
 ### Correlation Heatmap (Numerical Features)
 ![Correlation Heatmap (Numerical Features)](Output Screenshots/Correlation Heatmap(Numerical Features).png)
 
+
 ---
 
 ## Model Implementation and Comparison
+
+1. **Train-Test Split**
+   - Split the dataset into **training (80%)** and **testing (20%)** sets
+
+2. **Handling Imbalanced Data**
+   - Applied **SMOTE (Synthetic Minority Oversampling Technique)** on the training set to handle class imbalance
+
+3. **Models Compared**
+   - Logistic Regression  
+   - Random Forest  
+   - Gradient Boosting  
+   - K-Nearest Neighbors (KNN)  
+   - Support Vector Machine (SVM)
 
 ### Model Performance Summary
 ![Model Performance Summary](Output Screenshots/Model Performance Summary.png)
 
 **Gradient Boosting** emerged as the **best-performing model** 🔥  
 showing the **highest Accuracy (91.9%)**, **Precision (70.8%)**, **Recall (75.3%)**, and **F1-Score (73.0%)** —  
-indicating a well-balanced and reliable model for **Customer Churn Prediction**.  
-
-Models compared:  
-- Logistic Regression  
-- Random Forest  
-- Gradient Boosting  
-- K-Nearest Neighbors (KNN)  
-- Support Vector Machine (SVM)  
+indicating a well-balanced and reliable model for **Customer Churn Prediction**.
 
 ---
 
