@@ -197,6 +197,28 @@ results_df = pd.DataFrame({
 
 st.dataframe(results_df, use_container_width=True)
 
+st.markdown(
+    """
+    <div style='text-align: center; padding: 15px; background-color: rgba(0, 200, 83, 0.1); border-radius: 10px;'>
+        <h3 style='color:#00C853; font-size:26px; font-weight:800;'>
+            🌟 Model Performance Highlight 🌟
+        </h3>
+        <p style='font-size:20px; color:#FFFFFF;'>
+            <strong><span style='color:#00E676;'>Gradient Boosting</span></strong> emerged as the 
+            <strong>best-performing model</strong> 🔥  
+            showing the <strong>highest Accuracy (91.9%)</strong>, 
+            <strong>Precision (70.8%)</strong>, 
+            <strong>Recall (75.3%)</strong>, and 
+            <strong>F1-Score (73.0%)</strong> —  
+            indicating a well-balanced and reliable model for 
+            <strong>Customer Churn Prediction</strong> 💼
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.markdown("---")
 st.markdown("Developed by: **Ashutosh Sahoo**")
 st.markdown("GitHub Repository: [Click Here](https://github.com/Ashuytosh/Customer_Churn_Analysis_and_Prediction) 🔗")
