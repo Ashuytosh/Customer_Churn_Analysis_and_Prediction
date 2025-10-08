@@ -1,6 +1,7 @@
 # Customer Churn Analysis and Prediction
 
-[🔗 Live Streamlit App](https://customerchurnanalysisandprediction-vytvdffnz8j6mjwzgyvgcd.streamlit.app/)
+[![🔗 Live Streamlit App - Click Here](https://img.shields.io/badge/Live%20Streamlit%20App-Click%20Here-orange?style=for-the-badge)](https://customerchurnanalysisandprediction-vytvdffnz8j6mjwzgyvgcd.streamlit.app/)
+
 
 ---
 
@@ -97,3 +98,10 @@ indicating a well-balanced and reliable model for **Customer Churn Prediction**.
    - Day_Avg_Call_Duration  
 
 2. The **best model** for predicting customer churn in this dataset is **Gradient Boosting**.
+
+---
+
+## Author
+
+**Ashutosh Sahoo**  
+Email: [sahooashutosh792@gmail.com](mailto:sahooashutosh792@gmail.com)
