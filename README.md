@@ -1,7 +1,5 @@
 # Customer Churn Analysis and Prediction
 
-# Customer Churn Analysis and Prediction
-
 [🔗 Live Streamlit App](https://customerchurnanalysisandprediction-vytvdffnz8j6mjwzgyvgcd.streamlit.app/)
 
 ---
