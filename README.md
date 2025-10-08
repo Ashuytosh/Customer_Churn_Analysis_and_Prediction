@@ -43,7 +43,7 @@
 ## Insights
 
 ### Distribution of Numeric Features
-![Distribution of Numeric Features](Output Screenshots/Distribution of Numeric Features.png)
+![Distribution of Numeric Features](Output_Screenshots/Distribution_of_Numeric Features.png)
 
 ### Area Code vs Churn (Violin Plot)
 ![Area Code vs Churn (Violin Plot)](Output Screenshots/Area Code vs Churn (Violin Plot).png)
